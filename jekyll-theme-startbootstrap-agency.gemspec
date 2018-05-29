@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-startbootstrap-agency"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Sotirios Vrachas"]
   spec.email         = ["sotirios@vrachas.com"]
 
