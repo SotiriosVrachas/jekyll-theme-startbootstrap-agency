@@ -1,6 +1,10 @@
 # Jekyll Theme based on Startbootstrap Agency
 
-jekyll-theme-startbootstrap-agency is a Jekyll theme based on Startbootstrap - Agency
+jekyll-theme-startbootstrap-agency is a Jekyll theme based on Start Bootstrap - Agency. You can see the [live demo](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/).
+
+The objective of this project is to provide a Jekyll theme that is line by line perfect replica of “Startbootstrap - Agency” and at the same time to be so dynamic that can be used as a starting point for   child themes.
+
+Currently the only difference between “Startbootstrap – Agency” and jekyll-theme-startbootstrap-agency as served with the default content is found in the final `css/agency.min.css` which is normal since the scss is compiled by different engines. 
 
 ## Installation
 
