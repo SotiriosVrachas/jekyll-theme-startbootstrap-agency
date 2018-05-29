@@ -44,6 +44,21 @@ collections: # Enables additional data structures
 ```
 `css/`
 - `agency.min.scss` Add any additional styling
+
+`_scss/`
+- `_variables.scss`
+```
+$primary: [hexcode of the primary color] !default;
+```
+- `_mixins.scss` Font Configuration
+- `_masthead.scss` Master Header
+```
+ background-image: url('[Path to master header background image]');
+```
+- `_contact.scss`
+```
+ background-image: url('[Path to contact section background image]');
+```
 `_data/`
 - `default.yml` Data used by the default layout
 ```
