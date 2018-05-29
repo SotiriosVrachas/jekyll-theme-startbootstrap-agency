@@ -157,8 +157,10 @@ contact: # Contact Section
 `_layouts/`
 - `default.html` Default layout
 - `home.html` Home layout
+
 `js/`
 - `contact_me.js` Contact form checker and submitter
+
 `_projects/` Directory storing project data
 - `*.md` Project data
 
