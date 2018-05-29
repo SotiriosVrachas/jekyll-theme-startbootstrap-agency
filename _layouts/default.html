@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <title>{{ site.title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ site.data.default.brand.name }}</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          {{ site.data.default.menu-string }}
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            {%- for link in site.data.default.nav -%}
+            {% assign ws = '' %}
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {%- endfor -%}
+          {% assign ws = '' %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+{{ content }}
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">{{ site.data.default.copyright }}</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              {%- for sm in site.data.default.social-buttons -%}
+              {% assign ws = '' %}
+              <li class="list-inline-item">
+                <a href="{{ sm.url }}">
+                  <i class="{{ sm.icon }}"></i>
+                </a>
+              </li>
+              {%- endfor -%}
+            {% assign ws = '' %}
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              {%- for ql in site.data.default.quicklinks -%}
+              {% assign ws = '' %}
+              <li class="list-inline-item">
+                <a href="{{ ql.url }}">{{ ql.title }}</a>
+              </li>
+              {%- endfor -%}
+            {% assign ws = '' %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% assign ws = '' %}
+    {%- if page.layout == 'home' -%}
+    <!-- Portfolio Modals -->
+    {%- for project in site.projects -%}
+{% assign ws = '' %}
+
+    <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">{{ project.title }}</h2>
+                  <p class="item-intro text-muted">{{ project.description }}</p>
+                  <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="">
+                  {% assign ws = '' %}
+                  {{- project.content -}}
+                  {% assign ws = '' %}                  <ul class="list-inline">
+                    <li>{{ site.data.default.modal.date-string }}{{ project.date | date: "%B %Y" }}</li>
+                    <li>{{ site.data.default.modal.client-string }}{{ project.client }}</li>
+                    <li>{{ site.data.default.modal.category-string }}{{ project.category }}</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="{{ site.data.default.modal.close-icon }}"></i>
+                    {{ site.data.default.modal.close-string }}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {%- endfor -%}
+
+    {%- endif -%}
+    {% assign ws = '' %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>

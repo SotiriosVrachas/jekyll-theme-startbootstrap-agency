@@ -1,0 +1,38 @@
+brand:
+  name: Start Bootstrap
+menu-string: Menu
+
+nav:
+  - title: Services
+    url: '#services'
+  - title: Portfolio
+    url: '#portfolio'
+  - title: About
+    url: '#about'
+  - title: Team
+    url: '#team'
+  - title: Contact
+    url: '#contact'
+
+copyright: Copyright &copy; Your Website 2018
+
+social-buttons:
+  - icon: fa fa-twitter
+    url: '#' 
+  - icon: fa fa-facebook
+    url: '#'
+  - icon: fa fa-linkedin
+    url: '#'
+
+quicklinks:
+  - title: Privacy Policy
+    url: '#'
+  - title: Terms of Use
+    url: '#'
+
+modal:
+  date-string: 'Date: '
+  client-string: 'Client: '
+  category-string: 'Category: '
+  close-icon: 'fa fa-times'
+  close-string: 'Close Project'
