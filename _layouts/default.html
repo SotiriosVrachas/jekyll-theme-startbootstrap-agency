@@ -1,3 +1,7 @@
+{%- assign assets_path = "assets/" -%}
+{%- if site.assets_path -%}
+  {%- assign assets_path = site.assets_path -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -11,17 +15,17 @@
     <title>{{ site.title }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.assets_path }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ assets_path }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="{{ site.assets_path }}vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ assets_path }}vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="{{ site.assets_path }}css/agency.min.css" rel="stylesheet">
+    <link href="{{ assets_path }}css/agency.min.css" rel="stylesheet">
 
   </head>
 
@@ -132,18 +136,18 @@
     {% assign ws = '' %}
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ site.assets_path }}vendor/jquery/jquery.min.js"></script>
-    <script src="{{ site.assets_path }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ assets_path }}vendor/jquery/jquery.min.js"></script>
+    <script src="{{ assets_path }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="{{ site.assets_path }}vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ assets_path }}vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="{{ site.assets_path }}js/jqBootstrapValidation.js"></script>
-    <script src="{{ site.assets_path }}js/contact_me.js"></script>
+    <script src="{{ assets_path }}js/jqBootstrapValidation.js"></script>
+    <script src="{{ assets_path }}js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="{{ site.assets_path }}js/agency.min.js"></script>
+    <script src="{{ assets_path }}js/agency.min.js"></script>
 
   </body>
 
