@@ -57,6 +57,8 @@ Or install it yourself as:
 
 ## Usage
 
+**[Usage Example](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency-child)**
+
 `_config.yml`
 ```
 title: [The title of your site]
@@ -69,20 +71,20 @@ sass: # Enables the conversion of css/agency.min.scss to  css/agency.min.css
 collections: # Enables additional data structures 
   projects: # Enables _projects
 ```
-`css/`
+`assets/css/`
 - `agency.min.scss` Add any additional styling
 
-`_scss/`
+`assets/_scss/`
 - `_variables.scss`
 ```
 $primary: [hexcode of the primary color] !default;
 ```
-- `_mixins.scss` Font Configuration
-- `_masthead.scss` Master Header
+- `assets/_mixins.scss` Font Configuration
+- `assets/_masthead.scss` Master Header
 ```
  background-image: url('[Path to master header background image]');
 ```
-- `_contact.scss`
+- `assets/_contact.scss`
 ```
  background-image: url('[Path to contact section background image]');
 ```
@@ -204,7 +206,7 @@ contact: # Contact Section
 - `default.html` Default layout
 - `home.html` Home layout
 
-`js/`
+`assets/js/`
 - `contact_me.js` Contact form checker and submitter
 
 `_projects/` Directory storing project data
