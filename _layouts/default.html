@@ -110,7 +110,7 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">{{ project.title }}</h2>
                   <p class="item-intro text-muted">{{ project.description }}</p>
-                  <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="">
+                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
                   {% assign ws = '' %}
                   {{- project.content -}}
                   {% assign ws = '' %}                  <ul class="list-inline">
