@@ -187,6 +187,7 @@ layout: default
         </div>
         <div class="row">
           <div class="col-lg-12">
+            {%- if site.data.home.contact.use-php -%}
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
               <div class="row">
                 <div class="col-md-6">
@@ -216,6 +217,11 @@ layout: default
                 </div>
               </div>
             </form>
+            {%- else -%}
+              <div class="col-lg-12 text-center">
+                <a id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" href="mailto:{{ site.data.home.contact.email }}">{{ site.data.home.contact.btn }}</a>
+              </div>
+            {%- endif -%}
           </div>
         </div>
       </div>
