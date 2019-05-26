@@ -95,7 +95,7 @@ layout: default
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>{{ time.date }}</h4>
+                    <h4>{{ time.date | date: time.date_format }}</h4>
                     <h4 class="subheading">{{ time.title }}</h4>
                   </div>
                   <div class="timeline-body">
