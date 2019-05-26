@@ -59,6 +59,8 @@ Or install it yourself as:
 
 **[Usage Example](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency-child)**
 
+**[Usage Example2](https://github.com/Mutmatt/visionNetworkSolutions)**
+
 `_config.yml`
 ```
 title: [The title of your site]
