@@ -70,6 +70,9 @@ sass: # Enables the conversion of css/agency.min.scss to  css/agency.min.css
 
 collections: # Enables additional data structures 
   projects: # Enables _projects
+
+analytics:
+  google: UA-123456789-0
 ```
 `assets/css/`
 - `agency.min.scss` Add any additional styling
