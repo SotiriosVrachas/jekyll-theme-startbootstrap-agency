@@ -27,6 +27,19 @@
     <!-- Custom styles for this template -->
     <link href="{{ assets_path }}css/agency.min.css" rel="stylesheet">
 
+    {%- if site.analytics.google -%}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140892830-1');
+    </script>
+    {%- endif -%}
+
+
   </head>
 
   <body id="page-top">

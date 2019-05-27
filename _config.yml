@@ -9,3 +9,6 @@ assets_path: ''
 
 collections:
   projects:
+
+analytics:
+  google: # UA-#########-#
