@@ -1,3 +1,7 @@
+{%- assign nav_theme = "dark" -%}
+{%- if site.nav_theme -%}
+  {%- assign nav_theme = site.nav_theme -%}
+{%- endif -%}
 {%- assign assets_path = "assets/" -%}
 {%- if site.assets_path -%}
   {%- assign assets_path = site.assets_path -%}
@@ -32,7 +36,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-{{ nav_theme }} bg-{{ nav_theme }} fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ site.data.default.brand.name }}</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

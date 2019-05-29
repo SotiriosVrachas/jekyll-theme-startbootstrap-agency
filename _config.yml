@@ -9,3 +9,5 @@ assets_path: ''
 
 collections:
   projects:
+
+# nav-theme: # dark or light
