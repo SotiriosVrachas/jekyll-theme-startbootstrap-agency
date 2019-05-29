@@ -74,17 +74,17 @@ collections: # Enables additional data structures
 `assets/css/`
 - `agency.min.scss` Add any additional styling
 
-`assets/_scss/`
+`_sass/`
 - `_variables.scss`
 ```
 $primary: [hexcode of the primary color] !default;
 ```
-- `assets/_mixins.scss` Font Configuration
-- `assets/_masthead.scss` Master Header
+- `_sass/_mixins.scss` Font Configuration
+- `_sass/_masthead.scss` Master Header
 ```
  background-image: url('[Path to master header background image]');
 ```
-- `assets/_contact.scss`
+- `_sass/_contact.scss`
 ```
  background-image: url('[Path to contact section background image]');
 ```
