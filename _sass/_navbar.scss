@@ -1,4 +1,16 @@
 // Styling for the navbar
+.navbar-light {
+  .navbar-toggler {
+    color: $navbar-light-color;
+  }
+}
+
+.navbar-dark {
+  .navbar-toggler {
+    color: $navbar-dark-color;
+  }
+}
+
 #mainNav {
   background-color: $gray-900;
   .navbar-toggler {
